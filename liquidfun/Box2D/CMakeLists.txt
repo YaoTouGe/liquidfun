@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.7)
 
+add_compile_definitions(GL_SILENCE_DEPRECATION=1)
+
 project(Box2D)
 
 if(UNIX)

@@ -277,7 +277,7 @@ static void Keyboard(unsigned char key, int x, int y)
 	case 27:
 #ifndef __APPLE__
 		// freeglut specific function
-		glutLeaveMainLoop();
+		// glutLeaveMainLoop();
 #endif
 		exit(0);
 		break;
@@ -563,7 +563,7 @@ static void Exit(int code)
 {
 	// TODO: freeglut is not building on OSX
 #ifdef FREEGLUT
-	glutLeaveMainLoop();
+	// glutLeaveMainLoop();
 #endif
 	exit(code);
 }
@@ -600,7 +600,7 @@ int main(int argc, char** argv)
 	}
 
 	glutInit(&argc, argv);
-	glutInitContextVersion(2, 0);
+	// glutInitContextVersion(2, 0);
 	glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE);
 	glutInitWindowSize(width, height);
 	char title[32];
@@ -625,7 +625,7 @@ int main(int argc, char** argv)
 #endif  // ENABLE_GLUI
 
 #ifdef FREEGLUT
-	glutMouseWheelFunc(MouseWheel);
+	// glutMouseWheelFunc(MouseWheel);
 #endif
 	glutMotionFunc(MouseMotion);
 

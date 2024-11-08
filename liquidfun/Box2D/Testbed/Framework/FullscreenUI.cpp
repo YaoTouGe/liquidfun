@@ -139,7 +139,7 @@ void FullscreenUI::DrawArrows()
 // Draw text at the bottom of the screen.
 void FullscreenUI::DrawFooterText(const std::string &text)
 {
-	glColor4f(1, 1, 1, 1);
+	/*glColor4f(1, 1, 1, 1);
 	glPushMatrix();
 	glLoadIdentity();
 	if (m_aspectRatio > 1)
@@ -156,5 +156,5 @@ void FullscreenUI::DrawFooterText(const std::string &text)
 	glScalef(0.015f, 0.015f, 1);
 	glutStrokeString(GLUT_STROKE_MONO_ROMAN,
 					 (const unsigned char *)text.c_str());
-	glPopMatrix();
+	glPopMatrix();*/
 }

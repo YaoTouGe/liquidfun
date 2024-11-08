@@ -103,7 +103,7 @@ source_group(Tests FILES ${Testbed_Tests_SRCS})
 include_directories (
 	${OPENGL_INCLUDE_DIR}
 	${Box2D_SOURCE_DIR}
-	../../../freeglut/include
+	$${GLUT_INCLUDE_DIR}
 )
 
 if(APPLE)
@@ -123,7 +123,7 @@ add_executable(Testbed
 target_link_libraries (
 	Testbed
 	Box2D
-	freeglut_static
+	${GLUT_LIBRARIES}
 	glui
 	${ADDITIONAL_LIBRARIES}
 	${OPENGL_LIBRARIES}
